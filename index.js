@@ -10,4 +10,10 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
+function greet(str) {
+  let timeArray = str.split(':');
+  let hour = str.split(':')[0];
+}
+
+
 /* Write your implementation of displayMessage() */
