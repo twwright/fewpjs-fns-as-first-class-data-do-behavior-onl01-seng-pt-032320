@@ -12,10 +12,9 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 function greet(str) {
   let hour = str.split(':')[0];
-  switch hour
-  case 
   if (hour < 12) return "Good Morning";
-  if (hour)
+  if (hour > 17) return "Good Evening";
+  return "Good Afternoon";
 }
 
 
