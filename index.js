@@ -12,6 +12,7 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 function greet(str) {
   let hour = str.split(':')[0];
+  if (hour < 0) throw new RangeError
   if (hour < 12) return "Good Morning";
   if (hour > 17) return "Good Evening";
   return "Good Afternoon";
@@ -20,5 +21,5 @@ function greet(str) {
 
 /* Write your implementation of displayMessage() */
 function displayMessage(str) {
-  document.getElementById('greeting').innerText = html
+  document.getElementById('greeting').innerText = str;
 }
